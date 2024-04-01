@@ -1,0 +1,100 @@
+:root { 
+    --body-color: #c5c5db;
+    --background-color: #374353;
+    --border-color: #8d9c8c;
+    --font-color: #ffffff;
+    --display-color: #505C68;
+    --button-number: #5B6A7D;
+    --button-number-hover: #505b69;
+    --button-number-pressed: #34383d;
+    --button-operator: #374353;
+    --button-operator-hover: #2a313a;
+    --button-operator-pressed: #181a1d;
+    --button-result: #ce4506;
+    --button-result-hover: #b13c05;
+    --button-result-pressed: #963305;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--font-color);
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var( --body-color);
+}
+.calculator{
+    padding: 32px;
+    max-width: 300px;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.display{
+    background-color:  var(--display-color);
+    border-radius: 12px;
+    height:100px;
+}
+.buttons{
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid  var(--border-color);
+}
+
+.button{
+    display: block;
+    width: 25%;
+    aspect-ratio: 1 / 1;
+    border-radius: 0px;
+    border: 1px solid var(--border-color);
+    color: var(--font-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.number{
+    background-color: var(--button-number);
+}
+
+.operation{
+    background-color: var(--button-operator);
+}
+
+.result{
+    background-color: var(--button-result);
+}
+
+.number:hover{
+    background-color: var(--button-number-hover);
+}
+
+.operation:hover{
+    background-color: var(--button-operator-hover);
+}
+
+.result:hover{
+    background-color: var(--button-result-hover);
+}
+
+.number:active{
+    background-color: var(--button-number-pressed);
+}
+
+.operation:active{
+    background-color: var(--button-operator-pressed);
+}
+
+.result:active{
+    background-color: var(--button-result-pressed);
+}
+
+.number{
+    flex-grow: 3;
+}
