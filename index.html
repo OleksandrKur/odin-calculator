@@ -8,28 +8,30 @@
 </head>
 <body>
     <div class="calculator">
-        <div class="display"></div>
+        <div class="display">
+            <p id="current-number"></p>
+        </div>
         <div class="buttons">
-            <button class="button operation">+-</button>
-            <button class="button operation">CE</button>
-            <button class="button operation">C</button>
-            <button class="button operation">Del</button>
+            <button class="button additional" id="sign">+-</button>
+            <button class="button additional" id="clear-all">CE</button>
+            <button class="button additional" id="clear">C</button>
+            <button class="button additional" id="del">Del</button>
             <button class="button number">1</button>
             <button class="button number">2</button>
             <button class="button number">3</button>
-            <button class="button operation">+</button>
+            <button class="button additional">+</button>
             <button class="button number">4</button>
             <button class="button number">5</button>
             <button class="button number">6</button>
-            <button class="button operation">-</button>
+            <button class="button additional">-</button>
             <button class="button number">7</button>
             <button class="button number">8</button>
             <button class="button number">9</button>
-            <button class="button operation">*</button>
-            <button class="button operation">.</button>
+            <button class="button additional">*</button>
+            <button class="button number additional">.</button>
             <button class="button number">0</button>
-            <button class="button operation">/</button>
-            <button class="button result">=</button>          
+            <button class="button additional">/</button>
+            <button class="button result" id="result">=</button>          
         </div>
     </div>
 

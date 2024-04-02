@@ -63,7 +63,7 @@ body{
     background-color: var(--button-number);
 }
 
-.operation{
+.additional{
     background-color: var(--button-operator);
 }
 
